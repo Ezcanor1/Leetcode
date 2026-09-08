@@ -3,8 +3,6 @@ class Solution(object):
         i=0
         j=int(c**0.5)
         while i<=j:
-            # if i*i == c or j*j == c:
-            #     return True
             if (i*i+j*j)==c:
                 return True
             elif (i*i+j*j)>c:
