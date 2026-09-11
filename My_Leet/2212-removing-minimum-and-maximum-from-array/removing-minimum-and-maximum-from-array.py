@@ -4,7 +4,8 @@ class Solution(object):
         b=nums.index(min(nums))+1
         if len(nums)<=1:
             return 1
-        return min(max(len(nums)-f,len(nums)-b)+1,max(f,b),f+(len(nums)-b)+1,b+(len(nums)-f)+1)
+        n=len(nums)
+        return min(max(n-f,n-b)+1,max(f,b),f+(n-b)+1,b+(n-f)+1)
         
             
 
